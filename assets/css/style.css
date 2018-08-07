@@ -1,35 +1,73 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+#body {
+  background-image: url("../images/concrete-texture.png");
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #header {
-  background: #4aaaa5;
+  background: #8492b6;
   float: left;
   width: 200px;
-  text-align: center;
+  margin: 0px 0px 0px 7%;
+  padding: 20px 0px 20px 0px;
+  display: grid;
 }
 
 #links {
-  background: #ffffff;
-  float: right;
+  text-decoration: none;
+  background: white;
+  width: 100%;
+  padding: 26px 0px 26px 0px;
+  border-bottom: 2px solid lightgrey;
+  color: #595b5b;
+  text-align: center;
+  word-spacing: .07in;
+}
 
+#content {
+  background: white;
+  border: 1px solid lightgrey;
+  margin: 40px 7% 40px 7%;
+  display: grid;
+  width: 80%;
+  padding: 39px;
+  height: 100%;
 }
 
 h1 {
   font-size: 28px;
-  color: #eee;
+  color: white;
   text-align: center;
-  background: #333;
 }
 
 h2 {
   font-size: 24px;
 }
 
-a {
-  color: #d21034;
+h3 {
+  color: #595b5b;
+  font-size: 24px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color: lightgrey;
+  height: 2px;
+  margin: 30px 0px 30px 0px;
+}
+
+p {
+  font-size: 15px;
+  text-align: justify;
+  color: gray;
+  line-height: 28px; 
+  word-wrap: normal;
+}
+
+#headshot {
+  padding: 6px 20px 20px 0px;
 }
 
 .container {
@@ -55,4 +93,41 @@ a {
   width: 200px;
   height: 200px;
   margin-right: 20px;
+}
+
+.clearfix::after {
+  overflow: auto;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  background-color: #666c6c;
+  color: white;
+  text-align: center;
+  border-top: 6px solid #8492b6;
+  font-size: 12px;
+}
+
+a:active {
+  text-decoration: none;
+  color: #595b5b;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: #595b5b;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8492b6
 }

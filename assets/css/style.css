@@ -13,13 +13,11 @@
 }
 
 #links {
-  text-decoration: none;
+  text-align: center;
   background: white;
-  width: 100%;
-  padding: 26px 0px 26px 0px;
+  padding: 26px 0px 26px 66%;
   border-bottom: 2px solid lightgrey;
   color: #595b5b;
-  text-align: center;
   word-spacing: .07in;
 }
 
@@ -28,7 +26,7 @@
   border: 1px solid lightgrey;
   margin: 40px 7% 40px 7%;
   display: grid;
-  width: 80%;
+  width: 960;
   padding: 39px;
   height: 100%;
 }
@@ -63,7 +61,13 @@ p {
   text-align: justify;
   color: gray;
   line-height: 28px; 
-  word-wrap: normal;
+}
+
+p2 {
+  font-size: 15px;
+  text-align: left;
+  color: gray;
+  line-height: 20px; 
 }
 
 #headshot {
@@ -100,7 +104,8 @@ p {
 }
 
 #footer {
-  position: fixed;
+  position: absolute;
+  bottom:0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -131,3 +136,63 @@ a:hover {
   text-decoration: none;
   color: #8492b6
 }
+
+
+
+
+                      
+                     
+                      /* Center website */
+                      .main {
+                          max-width: 100px;
+                          margin: 0px;
+                          padding: 0px;
+                      }
+                      
+                      
+                      .row {
+                          width: 100%;
+                          background-color:white;
+                          padding: 0px;
+                      }
+                      
+                      /* Add padding BETWEEN each column (if you want) */
+                      .row,
+                      .row > .column {
+                          padding: 0px;
+                      }
+                      
+                      /* Create four equal columns that floats next to each other */
+                      .column {
+                          float: left;
+                          width: 25%;
+                      }
+                      
+                      /* Clear floats after rows */ 
+                      .row:after {
+                          content: "";
+                          display: table;
+                          clear: both;
+                      }
+                      
+                      /* Content */
+                      .content {
+                          background-color: white;
+                          padding: 10px;
+                      }
+                      
+                      /* Responsive layout - makes a two column-layout instead of four columns */
+                      @media screen and (max-width: 900px) {
+                          .column {
+                              width: 50%;
+                          }
+                      }
+                      
+                      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                      @media screen and (max-width: 600px) {
+                          .column {
+                              width: 100%;
+                          }
+                      }
+               
+    

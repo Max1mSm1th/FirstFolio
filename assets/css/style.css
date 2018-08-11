@@ -3,6 +3,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header Style */
+
 #header {
   background: #8492b6;
   float: left;
@@ -21,12 +23,34 @@
   word-spacing: .07in;
 }
 
+a:active {
+  text-decoration: none;
+  color: #595b5b;
+
+}
+
+a:link {
+  text-decoration: none;
+  color: #595b5b;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #8492b6
+}
+
+/* Page Content Style */
+
 #content {
   background: white;
   border: 1px solid lightgrey;
-  margin: 40px 7% 40px 7%;
+  margin: 40px 7% 120px 7%;
   display: grid;
-  width: 960;
+  width: 960px;
   padding: 39px;
   height: 100%;
 }
@@ -42,8 +66,14 @@ h2 {
 }
 
 h3 {
-  color: #595b5b;
+  color: #8492b6;
   font-size: 24px;
+}
+
+h4 {
+  color: #8492b6;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 hr {
@@ -64,11 +94,14 @@ p {
 }
 
 p2 {
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
   color: gray;
+  padding: 10px 0px 10px 0px;
   line-height: 20px; 
 }
+
+/* About Page Style */
 
 #headshot {
   padding: 6px 20px 20px 0px;
@@ -103,8 +136,10 @@ p2 {
   overflow: auto;
 }
 
+/* Footer Style */
+
 #footer {
-  position: absolute;
+  position: fixed;
   bottom:0;
   left: 0;
   bottom: 0;
@@ -117,82 +152,67 @@ p2 {
   font-size: 12px;
 }
 
-a:active {
-  text-decoration: none;
-  color: #595b5b;
+/* Portfolio Style */
 
+.main {
+  max-width: 100px;
+  margin: 0px;
+  padding: 0px;
+}                                                   
+                      
+.row {
+  width: 100%;
+  background-color:white;
+  padding: 0px;
 }
 
-a:link {
-  text-decoration: none;
-  color: #595b5b;
+.row,
+.row > .column {
+  padding: 0px;
 }
 
-a:visited {
-  text-decoration: none;
+.column {
+  float: left;
+  width: 25%;
 }
 
-a:hover {
-  text-decoration: none;
-  color: #8492b6
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
+.content {
+  background-color: white;
+  padding: 10px;
+}
 
-
-
-                      
-                     
-                      /* Center website */
-                      .main {
-                          max-width: 100px;
-                          margin: 0px;
-                          padding: 0px;
-                      }
-                      
-                      
-                      .row {
-                          width: 100%;
-                          background-color:white;
-                          padding: 0px;
-                      }
-                      
-                      /* Add padding BETWEEN each column (if you want) */
-                      .row,
-                      .row > .column {
-                          padding: 0px;
-                      }
-                      
-                      /* Create four equal columns that floats next to each other */
-                      .column {
-                          float: left;
-                          width: 25%;
-                      }
-                      
-                      /* Clear floats after rows */ 
-                      .row:after {
-                          content: "";
-                          display: table;
-                          clear: both;
-                      }
-                      
-                      /* Content */
-                      .content {
-                          background-color: white;
-                          padding: 10px;
-                      }
-                      
-                      /* Responsive layout - makes a two column-layout instead of four columns */
-                      @media screen and (max-width: 900px) {
-                          .column {
-                              width: 50%;
-                          }
-                      }
-                      
-                      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-                      @media screen and (max-width: 600px) {
-                          .column {
-                              width: 100%;
-                          }
-                      }
-               
+/* Contact Form Style */                      
     
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 1px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+#button {
+  background-color: #8492b6;
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.container {
+  border-radius: 1px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
